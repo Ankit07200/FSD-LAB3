@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Karnataka</title>
+
+<link rel="stylesheet" href="CSS/LAB3.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<div class="navbar">
+
+<div class="logo">
+TRAVEL KARNATAKA
+</div>
+
+<div class="nav-links">
+
+<a href="#destinations">Destinations</a>
+<a href="#pricing">Packages</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+<div class="hero">
+
+<h1>
+Travel The World <br>
+WITH US
+</h1>
+
+<p>
+Explore Karnataka's most beautiful destinations with affordable and memorable travel experiences.
+</p>
+
+<button class="btn btn-dark">
+EXPLORE
+</button>
+
+<button class="btn btn-light">
+BOOK NOW
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- Destinations -->
+
+<section id="destinations">
+
+<div class="container">
+
+<h2>Popular Destinations</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="Images/coorg.jpeg" alt="Coorg">
+
+<div class="card-content">
+
+<h3>Coorg</h3>
+
+<p>
+Known for coffee plantations, waterfalls and scenic beauty.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="Images/udupi.jpeg" alt="Udupi">
+
+<div class="card-content">
+
+<h3>Udupi</h3>
+
+<p>
+Famous for beaches, temples and delicious South Indian food.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="Images/mangalore.jpeg" alt="Mangalore">
+
+<div class="card-content">
+
+<h3>Mangalore</h3>
+
+<p>
+A beautiful coastal city famous for culture and beaches.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Packages -->
+
+<section id="pricing">
+
+<div class="container">
+
+<h2>Travel Packages</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+
+<h3>Coorg Explorer</h3>
+
+<div class="price">
+₹4000
+</div>
+
+<p>
+Transport, Hotel, Food Included.
+</p>
+
+</div>
+
+<div class="price-card">
+
+<h3>Udupi Retreat</h3>
+
+<div class="price">
+₹5000
+</div>
+
+<p>
+Hotel, Food, Beach Activities Included.
+</p>
+
+</div>
+
+<div class="price-card">
+
+<h3>Mangalore Trip</h3>
+
+<div class="price">
+₹3000
+</div>
+
+<p>
+Budget Friendly Package.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Gallery -->
+
+<section>
+
+<div class="container">
+
+<h2>Travel Gallery</h2>
+
+<div class="gallery">
+
+<img src="Images/group1.jpeg">
+<img src="Images/group2.jpeg">
+<img src="Images/group3.jpeg">
+<img src="Images/group4.jpeg">
+<img src="Images/group2.jpeg">
+<img src="Images/group1.jpeg">
+<img src="Images/group3.jpeg">
+<img src="Images/group4.jpeg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Booking Form -->
+
+<section id="booking">
+
+<div class="container">
+
+<h2>Book Your Trip</h2>
+
+<form id="bookingForm">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter Full Name"
+required>
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password"
+required>
+
+<label>Email</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email"
+required>
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+pattern="[0-9]{10}"
+placeholder="10 Digit Mobile Number"
+required>
+
+<label>Age</label>
+
+<input
+type="number"
+id="age"
+min="18"
+max="60"
+required>
+
+<label>Date of Journey</label>
+
+<input
+type="date"
+id="date"
+required>
+
+<label>Preferred Time</label>
+
+<input
+type="time"
+id="time"
+required>
+
+<label>Destination</label>
+
+<select id="destination" required>
+
+<option value="">
+Select Destination
+</option>
+
+<option>
+Coorg
+</option>
+
+<option>
+Udupi
+</option>
+
+<option>
+Mangalore
+</option>
+
+</select>
+
+<label>Gender</label>
+
+<div class="radio-group">
+
+<input
+type="radio"
+name="gender"
+value="Male"
+required>
+
+Male
+
+<input
+type="radio"
+name="gender"
+value="Female">
+
+Female
+
+<input
+type="radio"
+name="gender"
+value="Other">
+
+Other
+
+</div>
+
+<label>Facilities Required</label>
+
+<div class="checkbox-group">
+
+<input
+type="checkbox"
+value="Hotel"
+name="facility">
+
+Hotel
+
+<input
+type="checkbox"
+value="Food"
+name="facility">
+
+Food
+
+<input
+type="checkbox"
+value="Guide"
+name="facility">
+
+Guide
+
+</div>
+
+<label>Upload ID Proof</label>
+
+<input
+type="file"
+id="file"
+accept=".jpg,.png,.pdf"
+required>
+
+<label>Address</label>
+
+<textarea
+id="address"
+rows="4"
+placeholder="Enter Address"
+required>
+</textarea>
+
+<label>
+
+<input
+type="checkbox"
+id="agree"
+required>
+
+I agree to Terms & Conditions
+
+</label>
+
+<br><br>
+
+<button
+type="submit"
+class="btn btn-dark">
+
+Submit Booking
+
+</button>
+
+</form>
+
+<div id="result">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<div class="container">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+
+<h4>
+What is included in the package?
+</h4>
+
+<p>
+Transport, Hotel, Food and Sightseeing.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h4>
+Can I cancel booking?
+</h4>
+
+<p>
+Yes, according to company policy.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section>
+
+<div class="container">
+
+<h2>Testimonials</h2>
+
+<div class="testimonial">
+
+<p>
+Wonderful experience.
+Everything was perfectly organized.
+</p>
+
+<strong>
+— Ankit Anand
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<h3>
+Travel Karnataka
+</h3>
+
+<p>
+CHRIST University,
+Koramangala,
+Bengaluru
+</p>
+
+<p>
+travel@gmail.com
+</p>
+
+<p>
++91 9876543210
+</p>
+
+<p>
+© 2026 Travel Karnataka
+</p>
+
+</footer>
+
+<script src="JS/LAB3.js"></script>
+
+</body>
+</html>
